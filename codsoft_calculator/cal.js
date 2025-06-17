@@ -1,7 +1,6 @@
 function Value(val) {
   const display = document.getElementById('display');
 
-  // Square root
   if (val === '√') {
     try {
       display.value = Math.sqrt(eval(display.value));
