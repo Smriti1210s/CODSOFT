@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #6999cb, #caebfb);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #11020291;
+  padding: 35px;
+  border-radius: 40px;
+  box-shadow: 0 20px 20px rgba(16, 16, 16, 0.2);
+  width: 400px;
+}
+
+#display {
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 20px solid #a19c9c;
+  border-radius: 200px;
+  background: #f3f7f7;
+  color: #3c4859;
+  text-align: right;
+  box-shadow: inset 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.left-operators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+button {
+  font-size: 20px;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #2d3436;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.operator {
+  background-color: #ef6d6d;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.operator:hover {
+  background-color: #e98080;
+}
+
+.operator.special {
+  background-color: #ef6d6d;
+  border: 2px solid #6c5ce7;
+  color: #fff;
+  font-weight: bold;
+}
+
+.operator.special:hover {
+  background-color: #e98080;
+  transform: scale(1.1);
+}
+
+.clear {
+  background-color: #f0f56b;
+  padding: 10px 14px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d63031;
+  border: 2px double #f0932b;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.clear:hover {
+  background-color: #f6e58d;
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.equal {
+  background-color: #00cec9;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.equal:hover {
+  background-color: #00b894;
+  transform: scale(1.05);
+}
+
+.zero {
+  grid-column: span 1;
+}
+
+
+
+
+
