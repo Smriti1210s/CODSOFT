@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GENZYLE - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login to GENZYLE</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Register here</a></p>
+      <a href="#" class="back-home" onclick="goHome()">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function goHome() {
+      window.location.href = "landingpage.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Logo */
+.logo img {
+  height: 90px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logo-popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(219, 150, 201, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo-popup img {
+  max-width: 60%;
+  max-height: 60%;
+  animation: zoomOutLogo 0.5s ease forwards;
+  border-radius: 10px;
+}
+
+@keyframes zoomOutLogo {
+  from {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-image: url("images/lpnav.jpg"); 
+    background-size: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.10);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* Search Bar */
+.search-bar input {
+  padding: 15px 15px;
+  border-radius: 20px;
+  border: 5px solid #ccc;
+  margin: 0 20px;
+  width: 200px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+     font-weight: 600;
+     color: #1a1a1a;
+     transition: 0.3s ease; 
+    }
+
+    #navbar li a:hover {
+        color: #5E65A8; 
+       
+    }
+    /* Login Button */
+.login-btn {
+  background: #dc599d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: rgb(242, 231, 231);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #d244af;
+}
+button.shop {
+  background-color: #e75cc0;
+  color: rgb(221, 96, 194);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b3cd2;
+}
+
+
+h1{
+    font-size: 20px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h3 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    margin: 15px 0 20px 0; 
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.shadow{
+    text-shadow: 5px 5px 5px #ffffff;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+    #hero {
+        background-image: url("images/lpmain.png");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 25% right 0;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #hero h4 {
+        padding-bottom: 15px;
+    }
+
+    #hero h1{
+        color: #3465a4;
+    }
+
+#hero button {
+  background-color: #000000;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #d22484;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .features-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .features-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .features-box h6{
+display: inline-block;    
+padding: 10px 8px 6px 8px;
+line-height: 1;
+border-radius: 5px;
+color: black;
+background-color: lightblue;
+}
+
+
+#feature .features-box:nth-child(2) h6{
+    background-color: lightpink;
+}
+
+#feature .features-box:nth-child(3) h6{
+    background-color: lightgreen;
+}
+#feature .features-box:nth-child(5) h6{
+    background-color: rgb(251, 172, 255);
+}
+
+#feature .features-box:nth-child(6) h6{
+    background-color: lightsalmon;
+}
+
+/* Product Section Styling */
+#product1 {
+  text-align: center;
+  padding: 60px 50px;
+  background: #fdfdfd;
+}
+
+#product1 h2 {
+  font-size: 32px;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+#product1 p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: 0.3s ease;
+  background-color: #fff;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#product1 .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .description span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .description h4 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#product1 .description h5 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: green;
+}
+
+#product1 .pro a {
+  text-decoration: none;
+  display: inline-block;
+  color: #6c5ce7;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+#banner{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background-image: url("images/bgim1.jpg");
+ width: 100%;
+ height: 40vh;
+ background-size: cover;
+ background-position: center;
+}
+
+#banner h4{
+    color: black;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: black;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: rgb(255, 0, 0);
+}
+
+
+#banner1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner1 .banner-box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+background-image: url("images/win1.jpg");
+min-width: 30%;
+height: 30vh;
+background-size: cover;
+background-position: center;
+padding: 30px;
+margin-bottom: 20px;
+}
+
+#banner1 .banner-box2{
+    background-image: url("images/fw.jpg");
+}
+
+#banner1 .banner-box3{
+    background-image: url("images/trendy.jpg");
+}
+
+#banner1 h2{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#newsletter{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+background-color: rgb(235, 140, 207);
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#newsletter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#newsletter .form{
+display: flex;
+width: 40%;
+}
+
+#newsletter input{
+height: 3.125rem;
+padding: 0 1.25em;
+font-size: 14px;
+width: 100%;
+border: 1px solid transparent;
+border-radius: 4px;
+outline: none;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+#newletter button {
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+footer .logo{
+    margin-bottom: 50px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{    
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+ margin-top: 20px;
+}
+
+footer .follow i {
+color: #465b52;
+padding-right: 4px;
+cursor: pointer;
+}
+
+
+footer .install .row img{
+    border: 1px solid #1a1a1a;
+    border-radius: 7px;
+}
+
+footer .install img{  
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: slateblue;
+}
+
+
