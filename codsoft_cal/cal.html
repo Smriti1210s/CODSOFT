@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Codsoft Calculator</title>
+  <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="row">
+      <div class="left-operators">
+        <button class="operator" onclick="Value('√')">√</button>
+        <button class="operator" onclick="Value('%')">%</button>
+        <button class="operator" onclick="Value('+')">+</button>
+        <button class="operator" onclick="Value('-')">−</button>
+        <button class="operator" onclick="Value('*')">×</button>
+        <button class="operator" onclick="Value('/')">÷</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        
+      </div>
+      <div class="main-grid">
+        <button onclick="Value('7')">7</button>
+        <button onclick="Value('8')">8</button>
+        <button onclick="Value('9')">9</button>
+        
+        <button onclick="Value('4')">4</button>
+        <button onclick="Value('5')">5</button>
+        <button onclick="Value('6')">6</button>
+
+        <button onclick="Value('1')">1</button>
+        <button onclick="Value('2')">2</button>
+        <button onclick="Value('3')">3</button>
+
+        <button onclick="Value('0')" class="zero">0</button>
+        <button onclick="Value('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="cal.js"></script>
+</body>
+</html>
+
