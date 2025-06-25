@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smriti |Portfolio</title>
+  <link rel="stylesheet" href="content/ps.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+  <div id = "header">
+    <div class = "container">
+      <nav > <img src="content/image/namelogo.png" class ="logo">
+        <ul>
+          <li><a href="#header"> Home</a></li>
+          <li><a href="#about"> About</a></li>
+          <li><a href="#project"> Project</a></li>
+           <li><a href="#experience"> Experience</a></li>
+           <li><a href="#Certificate"> Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Developer</p>
+        <h1>Hey! I'm <span>Smriti Suman</span><br>BCA Student</h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----about----- -->
+  
+  <div id = "about">
+    <div class = "container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src ="content/image/About.png">
+        </div>
+        <div class ="about-col-2">
+          <h1 class = "sub-title">About Me</h1>
+          <p>I'm Smriti Suman, a passionate BCA student at Manav Rachna International Institute of Research and Studies.<br>
+             I have a keen interest in web development and UI/UX design, and I love creating responsive, visually appealing websites. <br>
+             Along with coding, I enjoy content writing and video editing, which allow me to express creativity beyond the screen. <br>
+             I'm always excited to learn new skills, explore creative ideas, and grow through meaningful projects and collaborations.</p>
+             <div class ="tab-title">
+              <p class ="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+               <p class ="tab-links "onclick="opentab('Education')">Education</p>
+             </div>
+             <div class ="tab-contents active-tab" id = "Skills">
+              <ul><li><span>UI/UX</span><br>Designing Web application interface</li>
+              <li><span>Basic Java & C Programming</span><br> Academic-level understanding of logic building</li>
+              <li><span>HTML, CSS, JavaScript</span><br>frontend development and UI styling</li>
+              <li><span>Content Writing</span><br>Blog writing, social media captions, and website text</li>
+              <li><span>Video Editing</span><br>Basic editing using CapCut, VN, or mobile apps</li>
+             </ul>
+             </div>
+             <div class ="tab-contents" id = "Education">
+              <ul><li><span>Bachelor's in computer application</span><br>3rd  Semester<br>Manav Rachna International Institute Of Reseach And Studies</li>
+              <li><span>Grade 12</span><br>75%<br> Academic-level understanding of logic building</li>
+             </ul>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----PROJECT------>
+  <div id ="project">
+    <div class = "container">
+      <h1 class = "sub-title">My Project</h1>
+      <div class ="project-list">
+<div>
+  <h2>GENZYLE</h2>
+  <p>A stylish and interactive e-commerce landing page designed for Gen Z fashion,
+     featuring product flashcards, login UI, and responsive layout.</p>
+     <a href ="https://github.com/Smriti1210s"> Learn more</a>
+</div>
+<div>
+  <h2>Smart Calculator</h2>
+  <p>A basic yet efficient calculator built with JavaScript that handles arithmetic operations with a user-friendly interface..</p>
+     <a href ="https://github.com/Smriti1210s"> Learn more</a>
+</div>
+<div>
+  <h2>Personal Portfolio Website</h2>
+  <p>A responsive and creative portfolio website showcasing
+     my skills, projects, experience, and contact information with a modern dark-red theme.
+</p>
+     <a href ="https://github.com/Smriti1210s"> Learn more</a>
+</div>
+<div>
+  <h2>Fast Medico</h2>
+  <p>A hospital website that allows users to book appointments, view reports online, and access essential health services digitally.</p>
+     <a href ="https://github.com/Smriti1210s"> Learn more</a>
+</div>
+      </div>
+    </div>
+  </div>
+  <!-----EXPERIENCE------->
+  <div id = "experience">
+    <div class = "container">
+      <h1 class ="sub-title">My Experience</h1>
+      <div class = "work-list">
+        <div class="work">
+          <img src="content/image/experience.jpg" alt="Experience" onclick="openPopup(this)">
+          <div class="layer">
+            <h3>CODSOFT</h3>
+            <P><span>Web Development Intern</span> <br>15th June to 15th July<br>Worked as a Web Development Intern at CodSoft, focusing on designing responsive and visually engaging frontend interfaces.
+Gained hands-on experience with HTML, CSS, and JavaScript to build interactive web pages and user-centric components</P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Popup Overlay -->
+<div id="imagePopup" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <img class="popup-content" id="popupImg">
+</div>
+  <!----Certificate------->
+  <div id = "Certificate">
+    <div class = "container">
+      <h1 class ="sub-title">My Certificate</h1>
+      <div class = "certificate-list">
+        <div class="certificate">
+          <img src="content/image/web development basic.jpg">
+          <div class="certify">
+            <h4>Web Development Basic</h4>
+            <P>Completed a certified Web Development course with a strong emphasis on frontend design.
+Gained practical experience in building responsive websites using HTML, CSS, and JavaScript.</P>
+<a href = "#"></a>
+          </div>
+        </div>
+         <div class="certificate">
+          <img src="content/image/cybersecurity.jpg">
+          <div class="certify">
+            <h4>Cybersecurity</h4>
+            <P>Completed a foundational course in Cyber Security covering key concepts like network security, ethical hacking, and data protection.
+Developed an understanding of cyber threats, safe browsing practices, and basic defense mechanisms against online attacks.</P>
+<a href = "#"></a>
+      </div>
+    </div>
+    <div class="certificate">
+          <img src="content/image/hackathon.jpg">
+          <div class="certify">
+            <h4>Hackathon</h4>
+            <P>Participated in a collaborative hackathon focused on innovative problem-solving and rapid web development.
+Worked in a team to design and prototype a functional project within a limited time using frontend technologies.</P>
+<div class="see-more-container">
+      <a href="https://drive.google.com/drive/folders/1Fv4L7DxTndfySBCEQ09cpDkb5HBezmjE" target="_blank" class="see-more-btn">See More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+   <h1 class ="sub-title">Contact Me</h1>
+    <div class="contact-box">
+      <div class="contact-left">
+        <p><a href="mailto:smritisuman1210@gmail.com">smritisuman1210@gmail.com</a></p>
+        <p><a href="tel:8178945809">8178945809</a></p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/smriti-suman-1058302a3"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Smriti1210s"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/tranquil.who"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="content/resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+  <script src="content/ps.js"></script>
+  </body>
+</html>
